@@ -1,0 +1,9 @@
+.innerDiv {
+  margin: 10px;
+  background-color: #d96b6b3b;
+  padding: 10px;
+  flex: 1;
+  color: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+}
