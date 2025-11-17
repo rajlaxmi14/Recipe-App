@@ -30,6 +30,16 @@ export default function FoodDetails({ foodId }) {
         <div>
           Price per serving: {Math.round(food.pricePerServing) / 100} 💲
         </div>
+        <div>
+          <h1>Ingredients</h1>
+          <div>
+            <ul>
+              {isloading
+                ? "Loading..."
+                : food.extendedIngredients.map((step) => <li>{step.name}</li>)}
+            </ul>
+          </div>
+        </div>
         <div className={styles.inst}>
           <h1>Instructions</h1>
           <div>
